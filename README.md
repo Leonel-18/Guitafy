@@ -1,6 +1,6 @@
-# SpendWise
+# Guitafy
 
-SpendWise es una aplicación web para la gestión de gastos e ingresos personales, diseñada para ayudar a los usuarios a organizar sus finanzas de forma clara, simple y estructurada.
+Guitafy es una aplicación web para la gestión de gastos e ingresos personales, diseñada para ayudar a los usuarios a organizar sus finanzas de forma clara, simple y estructurada.
 
 El sistema se basa en el uso de **categorías únicas y permanentes**, asociadas a cada movimiento, permitiendo un mejor análisis de hábitos financieros y una base sólida para la toma de decisiones económicas.
 
@@ -10,7 +10,7 @@ El sistema se basa en el uso de **categorías únicas y permanentes**, asociadas
 
 Muchas herramientas de finanzas personales carecen de consistencia en la categorización de datos y de una estructura pensada para el análisis a largo plazo.
 
-SpendWise apunta a resolver este problema mediante:
+Guitafy apunta a resolver este problema mediante:
 
 - Categorías persistentes y bien definidas
 - Separación clara entre ingresos y gastos
@@ -32,7 +32,7 @@ SpendWise apunta a resolver este problema mediante:
 
 ## Arquitectura del proyecto
 
-SpendWise está desarrollado con una arquitectura **frontend / backend desacoplada**, organizada en repositorios independientes:
+Guitafy está desarrollado con una arquitectura **frontend / backend desacoplada**, organizada en repositorios independientes:
 
 - **Frontend**  
   Aplicación web responsable de la interfaz de usuario y la experiencia visual.
@@ -109,7 +109,7 @@ Actualmente enfocado en:
 
 ## Modelo Freemium
 
-SpendWise está pensado para operar bajo un **modelo Freemium**, ofreciendo funcionalidades básicas de forma gratuita y funcionalidades avanzadas mediante planes pagos.
+Guitafy está pensado para operar bajo un **modelo Freemium**, ofreciendo funcionalidades básicas de forma gratuita y funcionalidades avanzadas mediante planes pagos.
 
 ### Funcionalidades básicas (Free)
 
@@ -132,7 +132,7 @@ El objetivo del modelo Freemium es permitir que cualquier usuario pueda gestiona
 
 ## Visión del proyecto
 
-SpendWise está pensado como un **producto real**, orientado a usuarios finales, con una arquitectura y diseño que permiten su evolución hacia un **modelo SaaS Freemium**.
+Guitafy está pensado como un **producto real**, orientado a usuarios finales, con una arquitectura y diseño que permiten su evolución hacia un **modelo SaaS Freemium**.
 
 El objetivo es ofrecer una solución accesible para la gestión financiera personal, combinando simplicidad en el uso gratuito con funcionalidades avanzadas para usuarios que requieran un mayor nivel de análisis.
 
