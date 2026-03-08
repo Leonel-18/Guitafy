@@ -1,6 +1,6 @@
 # Guitafy
 
-Guitafy es una aplicación web para la gestión de gastos e ingresos personales, diseñada para ayudar a los usuarios a organizar sus finanzas de forma clara, simple y estructurada.
+Guitafy es una aplicación web multifuncional para la gestión financiera, diseñada tanto para **uso personal** como para **pequeños negocios** (kioscos, comercios de barrio, emprendimientos). Permite registrar gastos, ingresos, gestionar categorías y analizar movimientos financieros de forma clara y estructurada.
 
 El sistema se basa en el uso de **categorías únicas y permanentes**, asociadas a cada movimiento, permitiendo un mejor análisis de hábitos financieros y una base sólida para la toma de decisiones económicas.
 
@@ -8,7 +8,7 @@ El sistema se basa en el uso de **categorías únicas y permanentes**, asociadas
 
 ## Problema que resuelve
 
-Muchas herramientas de finanzas personales carecen de consistencia en la categorización de datos y de una estructura pensada para el análisis a largo plazo.
+Muchas herramientas de finanzas personales carecen de consistencia en la categorización de datos y de una estructura pensada para el análisis a largo plazo. A su vez, los pequeños negocios no siempre tienen acceso a herramientas simples que les permitan llevar un control básico de sus operaciones sin complejidad innecesaria.
 
 Guitafy apunta a resolver este problema mediante:
 
@@ -16,6 +16,35 @@ Guitafy apunta a resolver este problema mediante:
 - Separación clara entre ingresos y gastos
 - Organización simple pero escalable
 - Enfoque en usabilidad y claridad de la información
+- Adaptabilidad a distintos contextos de uso (personal y negocio)
+
+---
+
+## Modos de uso
+
+Guitafy está pensado para funcionar en dos contextos distintos desde una misma plataforma:
+
+### 💼 Software de negocio
+Orientado a pequeños comercios y emprendimientos que necesitan llevar un control básico de sus operaciones financieras.
+
+| Funcionalidad | Disponible |
+|---|---|
+| Categorías | ✅ |
+| Gastos / Ingresos | ✅ |
+| Inventario / Stock | ✅ |
+| Dashboard | ✅ |
+| Historial de transacciones | ✅ |
+| Fiados | 🔜 Próximamente |
+
+### 👤 Software personal
+Orientado a usuarios que quieren gestionar sus finanzas personales de forma simple y ordenada.
+
+| Funcionalidad | Disponible |
+|---|---|
+| Categorías | ✅ |
+| Gastos / Ingresos | ✅ |
+| Dashboard | ✅ |
+| Historial de transacciones | ✅ |
 
 ---
 
@@ -25,6 +54,7 @@ Guitafy apunta a resolver este problema mediante:
 - Categorías únicas y permanentes
 - Asociación de categorías a cada transacción
 - Historial de movimientos financieros
+- Dashboard con métricas y gráficos
 - Base preparada para reportes y estadísticas
 - Arquitectura preparada para escalar a múltiples usuarios
 
@@ -53,16 +83,17 @@ Esta arquitectura permite:
 
 ### Frontend
 
-- Next JS - React
+- Next.js / React
 - Tailwind CSS
 - Axios
+- TanStack Query
 - TypeScript
 
 ### Backend
 
 - Node.js
 - Express
-- Prisma
+- Prisma ORM
 - TypeScript
 - PostgreSQL
 
@@ -96,13 +127,15 @@ Actualmente enfocado en:
 
 ## Roadmap
 
-- [x] Autenticación y gestión de usuarios
+- [x] Autenticación y gestión de usuarios (JWT + Refresh Tokens)
 - [x] Creación de categorías permanentes
-- [ ] Módulo de Transacciones
+- [x] Módulo de Transacciones (gastos e ingresos)
+- [x] Dashboard con métricas y gráficos
+- [ ] Historial con filtros avanzados
 - [ ] Reportes mensuales y anuales
-- [ ] Visualización con gráficos
-- [ ] Filtros avanzados por categoría
-- [ ] Exportación de datos
+- [ ] Exportación de datos (CSV)
+- [ ] Módulo de Inventario / Stock
+- [ ] Fiados (para modo negocio)
 - [ ] Preparación para modelo SaaS (planes / límites / escalabilidad)
 
 ---
@@ -116,6 +149,7 @@ Guitafy está pensado para operar bajo un **modelo Freemium**, ofreciendo funcio
 - Registro de gastos e ingresos
 - Gestión de categorías
 - Historial de movimientos
+- Dashboard básico
 - Uso individual de la aplicación
 
 ### Funcionalidades avanzadas (Premium – planeado)
@@ -124,9 +158,8 @@ Guitafy está pensado para operar bajo un **modelo Freemium**, ofreciendo funcio
 - Gráficos y visualizaciones personalizadas
 - Filtros avanzados
 - Exportación de datos
-- Funcionalidades orientadas a usuarios con mayor volumen de información
-
-El objetivo del modelo Freemium es permitir que cualquier usuario pueda gestionar sus finanzas básicas sin costo, y ofrecer herramientas más avanzadas para quienes requieran un mayor nivel de control y análisis.
+- Módulo de inventario (modo negocio)
+- Fiados y cuentas por cobrar
 
 ---
 
@@ -134,7 +167,7 @@ El objetivo del modelo Freemium es permitir que cualquier usuario pueda gestiona
 
 Guitafy está pensado como un **producto real**, orientado a usuarios finales, con una arquitectura y diseño que permiten su evolución hacia un **modelo SaaS Freemium**.
 
-El objetivo es ofrecer una solución accesible para la gestión financiera personal, combinando simplicidad en el uso gratuito con funcionalidades avanzadas para usuarios que requieran un mayor nivel de análisis.
+El objetivo es ofrecer una solución accesible tanto para la gestión financiera personal como para pequeños negocios, combinando simplicidad en el uso gratuito con funcionalidades avanzadas para quienes requieran un mayor nivel de control y análisis.
 
 Forma parte de mi portfolio como desarrollador web y representa mi enfoque en:
 
@@ -147,4 +180,4 @@ Forma parte de mi portfolio como desarrollador web y representa mi enfoque en:
 
 ## Licencia
 
-Licencia pendiente de definición.|
+Licencia pendiente de definición.
